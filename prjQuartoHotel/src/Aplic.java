@@ -11,7 +11,7 @@ public class Aplic {
        Scanner entrada = new Scanner(System.in);
        int opcao, rg, dias;
               
-       QuartoHotel objQuartoHotel = new QuartoHotel(13, 100);
+       QuartoHotel objQuartoHotel = new QuartoHotel(1010, 150);
        
        do{           
             

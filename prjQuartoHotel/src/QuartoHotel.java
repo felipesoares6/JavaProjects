@@ -1,3 +1,6 @@
+
+import java.util.EmptyStackException;
+
 /**
  *
  * @author felipesoares
@@ -33,8 +36,13 @@ public class QuartoHotel {
     
     
     public void reservar(int rg){
-        NumRG = rg;
-        Situacao = true;
+        if(!Situacao){
+            NumRG = rg;
+            Situacao = true;
+        }else{
+            throw new EmptyStackException();
+        }
+        
     }
     
     public double liberar(int num){
