@@ -15,7 +15,7 @@ public abstract class Pessoa {
         this.AnoInscricao = AnoInscricao;
     }
     
-    abstract public double calcBonus();
+    abstract public double calcBonus(int x);
     
     public void addCompras(double Compra){
        TotalCompras += Compra;
