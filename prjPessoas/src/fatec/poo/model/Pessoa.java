@@ -21,15 +21,15 @@ public abstract class Pessoa {
        TotalCompras += Compra;
     }
     
-    public void getNome(String Nome){
-        this.Nome = Nome;
+    public String getNome(){
+        return Nome;
     }
     
-    public void getAnoInscricao(int AnoInscricao){
-        this.AnoInscricao = AnoInscricao;
+    public int getAnoInscricao(){
+        return AnoInscricao;
     }
     
-    public void getTotalCompras(int TotalCompras){
-        this.TotalCompras = TotalCompras;
+    public double getTotalCompras(){
+        return TotalCompras;
     }
 }
