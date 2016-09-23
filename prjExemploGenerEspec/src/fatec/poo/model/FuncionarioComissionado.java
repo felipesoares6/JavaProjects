@@ -43,9 +43,9 @@ public class FuncionarioComissionado extends Funcionario {
         if(TotalVendas <= 5000)
             return 0;
         else if(TotalVendas > 5000 && TotalVendas <= 10000)
-            return calcSalBruto() * 0.35;
+            return calcSalBruto() * 0.035;
         else
-            return calcSalBruto() * 0.5;
+            return calcSalBruto() * 0.05;
             
     }
     
