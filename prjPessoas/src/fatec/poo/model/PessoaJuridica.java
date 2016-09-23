@@ -4,11 +4,11 @@ package fatec.poo.model;
  *
  * @author felipesoares
  */
-public class pessoaJuridica extends Pessoa {
+public class PessoaJuridica extends Pessoa {
     private String CGC;
     private double TaxaIncentivo;
     
-    public pessoaJuridica(String Nome, int AnoInscricao, String CGC) {
+    public PessoaJuridica(String Nome, int AnoInscricao, String CGC) {
         super(Nome, AnoInscricao);
         this.CGC = CGC;
     }

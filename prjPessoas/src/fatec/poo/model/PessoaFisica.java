@@ -21,6 +21,10 @@ public class PessoaFisica extends Pessoa {
     public void setBase(double Base){
         this.Base = Base;
     }
+    
+    public double getBase(){
+        return Base;
+    }
 
     public double calcBonus(int AnoAtual) {
         double aux;
