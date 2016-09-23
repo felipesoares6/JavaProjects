@@ -22,7 +22,9 @@ public class Aplic {
         funcMens.setCargo("Aux. Administrativo");
         funcMens.apontarValSalMin(760);
         funcComs.setCargo("Jogador");
-        funcComs.addVendas(10000);
+        funcComs.addVendas(1000);
+        funcComs.addVendas(3000);
+        funcComs.addVendas(2000);
         funcComs.setSalBase(980);
         
         System.out.println("Funcionario Horista: ");
