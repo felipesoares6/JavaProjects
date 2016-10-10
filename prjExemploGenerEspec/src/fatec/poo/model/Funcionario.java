@@ -9,6 +9,7 @@ public abstract class Funcionario {
     private String Nome;
     private String DtAdmissao;
     private String Cargo;
+    private Departamento departamento; //ponteiro
     
     public Funcionario(int r, String n, String dta){
         Registro = r;
@@ -34,6 +35,16 @@ public abstract class Funcionario {
     
     public void setCargo(String Cargo){
         this.Cargo = Cargo;
+    }
+    
+    // retorna endereco de um objeto da classe departamento
+    public Departamento getDepartamento() {
+        return departamento;
+    }
+
+    // parametro de entrada endereco de um objeto da classe departamento
+    public void setDepartamento(Departamento departamento) {
+        this.departamento = departamento;
     }
     
     
