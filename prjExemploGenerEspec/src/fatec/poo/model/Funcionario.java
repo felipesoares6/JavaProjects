@@ -10,6 +10,7 @@ public abstract class Funcionario {
     private String DtAdmissao;
     private String Cargo;
     private Departamento departamento; //ponteiro
+    private Projeto projeto; 
     
     public Funcionario(int r, String n, String dta){
         Registro = r;
@@ -45,6 +46,14 @@ public abstract class Funcionario {
     // parametro de entrada endereco de um objeto da classe departamento
     public void setDepartamento(Departamento departamento) {
         this.departamento = departamento;
+    }
+
+    public Projeto getProjeto() {
+        return projeto;
+    }
+
+    public void setProjeto(Projeto projeto) {
+        this.projeto = projeto;
     }
     
     
