@@ -20,6 +20,8 @@ public class Aplic {
         
         DecimalFormat formato = new DecimalFormat("#,##0.00");
         
+        
+        
         funcHor.setCargo("Programador");
         funcHor.apontarHoras(90);
         funcMens.setCargo("Aux. Administrativo");
@@ -35,7 +37,16 @@ public class Aplic {
         funcMens.setDepartamento(dep1);
         funcComs.setDepartamento(dep2);
         
-        System.out.println("O funcionario " + funcHor.getNome() + " trabalha no departamento de " + funcHor.getDepartamento().getNome());
+        //estabelecer associacao binaria entre 1 objeto dep com 1 obj func
+        dep1.addFuncionario(funcHor);
+        dep1.addFuncionario(funcMens);
+        dep2.addFuncionario(funcComs);
+        dep1.listar();
+        dep2.listar();
+        
+        
+        
+        System.out.println("\nO funcionario " + funcHor.getNome() + " trabalha no departamento de " + funcHor.getDepartamento().getNome());
         System.out.println("O funcionario " + funcMens.getNome() + " trabalha no departamento de " + funcHor.getDepartamento().getNome());
         System.out.println("O funcionario " + funcComs.getNome() + " trabalha no departamento de " + funcHor.getDepartamento().getNome());
         
