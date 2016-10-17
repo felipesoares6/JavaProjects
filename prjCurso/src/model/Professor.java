@@ -12,7 +12,7 @@ public class Professor extends Pessoa{
     private int areaAtuacao;
     private Turma turma;
     
-    Professor(String regFunc, String nome){
+    public Professor(String nome, String regFunc){
         super(nome);
         this.regFunc = regFunc;
     }

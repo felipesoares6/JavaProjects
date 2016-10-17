@@ -11,7 +11,7 @@ public class Pessoa {
     private String endereco;
     private String cidade;
     
-    Pessoa (String nome) {
+    public Pessoa (String nome) {
         this.nome = nome;
     }
     

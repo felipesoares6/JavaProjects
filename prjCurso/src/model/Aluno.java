@@ -11,7 +11,7 @@ public class Aluno extends Pessoa {
     private int escolaridade;
     private Turma turma;
     
-    Aluno(String ra, String nome){
+    public Aluno(String nome, String ra){
         super(nome);
         this.ra = ra;
     }
@@ -30,6 +30,10 @@ public class Aluno extends Pessoa {
 
     public int getEscolaridade() {
         return escolaridade;
+    }
+    
+    public void setEscolaridade(int escolaridade) {
+        this.escolaridade =  escolaridade;
     }
     
     

@@ -12,7 +12,7 @@ public class Curso {
     private String cargaHoraria;
     private Turma turma;
     
-    Curso(String sigla, String descricao, String cargaHoraria){
+    public Curso(String sigla, String descricao, String cargaHoraria){
         this.sigla = sigla;
         this.descricao = descricao;
         this.cargaHoraria = cargaHoraria;

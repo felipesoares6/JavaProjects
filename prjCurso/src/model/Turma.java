@@ -14,7 +14,7 @@ public class Turma {
    private Professor professor;
    private Aluno[] alunos;
    
-   Turma(String turma, int qtdeVagas){
+   public Turma(String turma, int qtdeVagas){
        this.turma = turma;
        this.qtdeVagas = qtdeVagas;
        alunos = new Aluno[2];
@@ -60,16 +60,17 @@ public class Turma {
     
     public void listarAlunos(){
         System.out.println("Lista de Frequência");
-        System.out.print("Sigla do Curso: \t\t" + curso.getSigla());
-        System.out.println("\t\t\t Nome do Curso: \t\t" + curso.getDescricao());
-        System.out.println("Sigla Turma: \t\t" + turma);
-        System.out.println("Nome do Professor: \t\t" + professor.getNome());
+        System.out.print("Sigla do Curso: \t" + curso.getSigla());
+        System.out.println("\t\t Nome do Curso: \t" + curso.getDescricao());
+        System.out.println("Sigla Turma: \t" + turma);
+        System.out.println("Nome do Professor: \t" + professor.getNome());
         
-        System.out.println("\t\t\t\t Nome do Aluno");
+        System.out.println("\n\t\t Alunos\n");
         
         for(int i=0; i<numAlu; i++){
             System.out.print( (i+1) + " - ");
-            System.out.println(alunos[i].getNome());
+            System.out.println(alunos[i].getNome() + "\tRA:" + alunos[i].getRa()+ "\tEscolaridade:" + alunos[i].getEscolaridade());
+            
         }
     }
    
