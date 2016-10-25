@@ -3,6 +3,7 @@ import fatec.poo.model.Departamento;
 import fatec.poo.model.FuncionarioComissionado;
 import fatec.poo.model.FuncionarioHorista;
 import fatec.poo.model.FuncionarioMensalista;
+import fatec.poo.model.Projeto;
 import java.text.DecimalFormat;
 
 /**
@@ -17,33 +18,37 @@ public class Aplic {
         FuncionarioComissionado funcComs = new FuncionarioComissionado(2031, "Dindin", "05/04/1982", 1);
         Departamento dep1 = new Departamento("RH", "Recursos Humanos");
         Departamento dep2 = new Departamento("VD", "Vendas");
-        
+        Projeto prj1 = new Projeto(123, "Projetinho top");
+             
         DecimalFormat formato = new DecimalFormat("#,##0.00");
-        
-        
         
         funcHor.setCargo("Programador");
         funcHor.apontarHoras(90);
+        
         funcMens.setCargo("Aux. Administrativo");
         funcMens.apontarValSalMin(760);
+        
         funcComs.setCargo("Jogador");
         funcComs.addVendas(1000);   
         funcComs.addVendas(3000);
         funcComs.addVendas(2000);
         funcComs.setSalBase(980);
         
-        //estabelecer associacao binaria 1..1entre 1 obj func com obj dep
-        funcHor.setDepartamento(dep1);
-        funcMens.setDepartamento(dep1);
-        funcComs.setDepartamento(dep2);
+        prj1.setDataInicio("01/9/2018");
+        prj1.setDataTermino("22/11/2019");
         
-        //estabelecer associacao binaria entre 1 objeto dep com 1 obj func
         dep1.addFuncionario(funcHor);
         dep1.addFuncionario(funcMens);
         dep2.addFuncionario(funcComs);
+        
+        prj1.addFuncionario(funcHor);
+        prj1.addFuncionario(funcMens);
+        prj1.addFuncionario(funcComs);
+        
         dep1.listar();
         dep2.listar();
         
+        prj1.listar();
         
         
         System.out.println("\nO funcionario " + funcHor.getNome() + " trabalha no departamento de " + funcHor.getDepartamento().getNome());

@@ -29,14 +29,16 @@ public class Projeto {
     
     public void addFuncionario(Funcionario f){
         funcionarios[qtdFunc++] = f;
+        f.setProjeto(this);
     }
     
     public void listar(){
+        System.out.println("\nProjeto");
         System.out.println("Codigo: " + codigo);
-        System.out.println("Descricao" + descricao);
-        System.out.println("Data Inicio" + dataInicio);
-        System.out.println("Data Termino" + dataTermino);
-        System.out.println("Qtd Funcionarios" + qtdFunc);
+        System.out.println("Descricao: " + descricao);
+        System.out.println("Data Inicio: " + dataInicio);
+        System.out.println("Data Termino: " + dataTermino);
+        System.out.println("Qtd Funcionarios: " + qtdFunc);
         
         
         System.out.println("\nRegistro\t\tNome\t\t Departamento \t\tTipo\n");

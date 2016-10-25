@@ -28,11 +28,13 @@ public class Departamento {
    
     public void addFuncionario(Funcionario f){
         funcionarios[qtdFunc++]  = f ;
+        f.setDepartamento(this);
     }
     
     public void listar(){
-        System.out.println("\nSigla :" + sigla);
-        System.out.println("Nome :" + nome);
+        System.out.println("\nDepartamento");
+        System.out.println("\nSigla: " + sigla);
+        System.out.println("Nome: " + nome);
         System.out.println("Qtd funcionarios: " + qtdFunc);
         
         System.out.println("\nRegistro\t\tNome\t\tTipo\n");
